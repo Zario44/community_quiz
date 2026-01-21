@@ -12,7 +12,6 @@ use App\Livewire\AdminManageQuestion;
 use App\Http\Controllers\Dashboard;
 use App\Livewire\Ticket;
 
-
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
