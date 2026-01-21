@@ -1,0 +1,29 @@
+<?php
+
+namespace {{ namespace }};
+
+use Tests\TestCase;
+use App\Models\User;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\WithFaker;
+
+class {{ class }} extends TestCase
+{
+    // 👇 Ajouté automatiquement pour gagner du temps !
+    use RefreshDatabase;
+
+    /**
+     * A basic feature test example.
+     */
+    public function test_example(): void
+    {
+        // 1. ARRANGE
+        // $user = User::factory()->create();
+
+        // 2. ACT
+        $response = $this->get('/');
+
+        // 3. ASSERT
+        $response->assertStatus(200);
+    }
+}
